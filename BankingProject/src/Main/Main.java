@@ -18,6 +18,8 @@ public class Main {
 				+ " are both " + employeeOne.getJobTitle() + "s and they report to " + managerOne.getFirstName() + " "
 				+ managerOne.getLastName() + ".");
 
+		
+		System.out.println(managerOne);
 	}
 
 }

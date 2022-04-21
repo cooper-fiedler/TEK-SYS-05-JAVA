@@ -24,7 +24,10 @@ public class Manager extends Employee {
 
 	@Override
 	public String toString() {
-		return "Manager [timeCards = " + timeCards + "]";
+		return "Manager [getFirstName() = " + getFirstName() + " , getLastName() = "
+				+ getLastName() + ", getEmployeeId() = " + getEmployeeId() + ", getJobTitle() = " + getJobTitle() + ", timeCards = " + timeCards + "]";
 	}
+
+	
 
 }
