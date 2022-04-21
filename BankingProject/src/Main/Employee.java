@@ -1,14 +1,15 @@
 package Main;
 
-public class Employee {
+public class Employee extends AbstractAccountActions {
 
 	private String firstName;
 	private String lastName;
 	private long employeeId;
 	private String jobTitle;
-	
+	private float totalAmmount;
+
 	public Employee() {
-		
+
 	}
 
 	public Employee(String firstName, String lastName, long employeeId, String jobTitle) {
@@ -57,6 +58,18 @@ public class Employee {
 	public String toString() {
 		return "Employee [" + "firstName = " + firstName + ", lastName = " + lastName + ", employeeId = " + employeeId
 				+ ", jobTitle = " + jobTitle + "]";
+	}
+
+	@Override
+	float withdraw(float amount, float withdrawAmount) {
+		totalAmmount = amount - withdrawAmount;
+		return totalAmmount;
+	}
+
+	@Override
+	float deposit(float amount, float depositAmount) {
+		totalAmmount = amount + depositAmount;
+		return totalAmmount;
 	}
 
 }

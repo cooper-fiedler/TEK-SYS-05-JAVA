@@ -18,13 +18,33 @@ public class Main {
 				+ " are both " + employeeOne.getJobTitle() + "s and they report to " + managerOne.getFirstName() + " "
 				+ managerOne.getLastName() + ".");
 
+
+		e3.setBankAccount(325);
+		e3.setBankAccount(e3.deposit(e3.getBankAccount(), 110));
+		System.out.println("Bank Account value for " + e3.getFirstName() + " " + e3.getLastName() + ": " + e3.getBankAccount());
 		
-		System.out.println(managerOne);
+		
+		Box<Integer> intBox = new Box<Integer>();
+		intBox.add(1);
+		intBox.add(2);
+		intBox.add(3);
+		intBox.add(4);
+		
+		System.out.println(intBox.get());
+		
+		Box<String> strBox = new Box<String>();
+		strBox.add("Cooper");
+		strBox.add("S");
+		strBox.add("Fiedler");
+		
+		System.out.println(strBox.get());
+		
+		managerOne.PrintThis(1,2,3);
+		
+		String str = "CHECKING";
+		Accounts accOne = new Accounts(AccountTypes.valueOf(str));
+		accOne.choseAccount();
+		
 	}
 
 }
-
-
-
-
-

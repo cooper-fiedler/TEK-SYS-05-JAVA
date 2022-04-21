@@ -1,22 +1,26 @@
 package Main;
 
 public abstract class AbstractAccountActions {
-	String bankAccount;
+	float bankAccount;
 
-	
 	public AbstractAccountActions() {
-		
+
 	}
-	
-	public AbstractAccountActions(String bankAccount) {
+
+	public AbstractAccountActions(float bankAccount) {
 		this.bankAccount = bankAccount;
 	}
-	
-	abstract float withdraw(int amount, int withdrawAmount);
-	abstract float deposit(int amount, int depositAmount);
-	
-	public String getBankAccount() {
+
+	abstract float withdraw(float amount, float withdrawAmount);
+
+	abstract float deposit(float amount, float depositAmount);
+
+	public float getBankAccount() {
 		return bankAccount;
 	}
-	
+
+	public void setBankAccount(float bankAccount) {
+		this.bankAccount = bankAccount;
+	}
+
 }
