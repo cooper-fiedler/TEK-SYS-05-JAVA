@@ -1,4 +1,4 @@
-package com.perscholas.cafe;
+package com.fiedlercooper.cafe;
 
 abstract class Product {
 
@@ -51,7 +51,7 @@ abstract class Product {
 
 	abstract double calculateProductTotal(int quantity, double price);
 
-	abstract void addOptions(String option1, String option2);
+	abstract void addOptions();
 
 	abstract void printOptions();
 

@@ -1,4 +1,4 @@
-package com.perscholas.cafe;
+package com.fiedlercooper.cafe;
 
 import java.util.Scanner;
 
@@ -9,8 +9,6 @@ public class Espresso extends Product {
 
 	public Espresso() {
 		super("Espresso", 3.50, "Plain espresso");
-		this.extraShot = false;
-		this.macchiato = false;
 	}
 
 	public Espresso(boolean extraShot, boolean macchiato) {
@@ -53,41 +51,38 @@ public class Espresso extends Product {
 
 	@Override
 	void addOptions() {
-		Scanner espressoScanner = new Scanner(System.in);
-		System.out.println("Would you like an extraShot?");
-		String extraShot = espressoScanner.nextLine();
-		System.out.println("Would you like a macchiato?");
-		String macchiato = espressoScanner.nextLine();
 
-		espressoScanner.close();
+		Scanner optionInput = new Scanner(System.in);
 
-		if (extraShot == "Y") {
-			this.extraShot = true;
-		}
+		System.out.println("Do you want an Extra Shot?");
+		String option1 = optionInput.nextLine();
+		System.out.println("Do you want a Macchiato?");
+		String option2 = optionInput.nextLine();
+		this.extraShot = option1.equalsIgnoreCase("Yes");
+		this.macchiato = option2.equalsIgnoreCase("Yes");
+		
 
-		if (macchiato == "Y") {
-			this.macchiato = true;
-		}
+
 	}
-	
+
 	@Override
 	void printOptions() {
 		String extraShot;
 		String macchiato;
-		
-		if (this.extraShot == true) {
+
+		if (this.extraShot) {
 			extraShot = "Yes (Add $2)";
-		}else {
+		} else {
 			extraShot = "No";
 		}
-		
-		if (this.macchiato == true) {
+
+		if (this.macchiato) {
 			macchiato = "Yes (Add $1)";
-		}else {
+		} else {
 			macchiato = "No";
 		}
-		
-		System.out.println("Extra Shot: " + extraShot + "   |    Macchiato: " + macchiato); 
+
+		System.out.format("|  Extra Shot: %-25s|  Macchiato: %-20s", extraShot, macchiato);
 	}
 
 }

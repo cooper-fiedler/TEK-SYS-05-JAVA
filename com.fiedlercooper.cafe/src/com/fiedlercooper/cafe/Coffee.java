@@ -1,5 +1,6 @@
-package com.perscholas.cafe;
+package com.fiedlercooper.cafe;
 
+import java.util.Scanner;
 
 public class Coffee extends Product {
 
@@ -7,13 +8,11 @@ public class Coffee extends Product {
 	boolean milk;
 
 	public Coffee() {
-		super("Coffee", 4.50, "Just a crappy cup of coffee");
-		this.sugar = false;
-		this.milk = false;
+		super("Coffee", 4.50, "Just a simple cup of coffee");
 	}
 
 	public Coffee(boolean sugar, boolean milk) {
-		super("Coffee", 4.50, "Just a crappy cup of coffee");
+		super("Coffee", 4.50, "Just a simple cup of coffee");
 		this.sugar = sugar;
 		this.milk = milk;
 	}
@@ -41,9 +40,20 @@ public class Coffee extends Product {
 	}
 
 	@Override
-	void addOptions(String option1, String option2) {
+	void addOptions() {
+		
+		
+		Scanner optionInput = new Scanner(System.in);
+		
+		System.out.println("Do you want Milk?");
+		String option1 = optionInput.nextLine();
+		System.out.println("Do you want Sugar?");
+		String option2 = optionInput.nextLine();
+		
 		this.milk = option1.equalsIgnoreCase("Yes");
 		this.sugar = option2.equalsIgnoreCase("Yes");
+		
+
 
 	}
 	
@@ -64,7 +74,7 @@ public class Coffee extends Product {
 			milk = "No";
 		}
 
-		System.out.println("Sugar: " + sugar + "   |    Milk: " + milk); 
+		System.out.format("|  Milk: %-31s|  Sugar: %-20s", milk, sugar);
 	}
 
 }

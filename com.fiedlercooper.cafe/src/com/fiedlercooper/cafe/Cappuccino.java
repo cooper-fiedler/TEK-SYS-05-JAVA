@@ -1,4 +1,4 @@
-package com.perscholas.cafe;
+package com.fiedlercooper.cafe;
 
 import java.util.Scanner;
 
@@ -9,8 +9,6 @@ public class Cappuccino extends Product {
 
 	public Cappuccino() {
 		super("Cappuccino", 5.50, "Espresso and milk and milk foam");
-		this.peppermint = false;
-		this.whippedCream = false;
 	}
 
 	public Cappuccino(boolean peppermint, boolean whippedCream) {
@@ -52,21 +50,16 @@ public class Cappuccino extends Product {
 
 	@Override
 	void addOptions() {
-		Scanner cappuccinoScanner = new Scanner(System.in);
-		System.out.println("Would you like an extraShot?");
-		String peppermint = cappuccinoScanner.nextLine();
-		System.out.println("Would you like a macchiato?");
-		String whippedCream = cappuccinoScanner.nextLine();
 
-		cappuccinoScanner.close();
+		Scanner optionInput = new Scanner(System.in);
 
-		if (peppermint == "Y") {
-			this.peppermint = true;
-		}
-
-		if (whippedCream == "Y") {
-			this.whippedCream = true;
-		}
+		System.out.println("Do you want Peppermint?");
+		String option1 = optionInput.nextLine();
+		System.out.println("Do you want Whipped Cream?");
+		String option2 = optionInput.nextLine();
+		this.peppermint = option1.equalsIgnoreCase("Yes");
+		this.whippedCream = option2.equalsIgnoreCase("Yes");
+		
 
 	}
 
@@ -75,19 +68,19 @@ public class Cappuccino extends Product {
 		String peppermint;
 		String whippedCream;
 
-		if (this.peppermint == true) {
+		if (this.peppermint) {
 			peppermint = "Yes (Add $2)";
 		} else {
 			peppermint = "No";
 		}
 
-		if (this.whippedCream == true) {
+		if (this.whippedCream) {
 			whippedCream = "Yes (Add $1)";
 		} else {
 			whippedCream = "No";
 		}
 
-		System.out.println("Peppermint: " + peppermint + "   |    Whipped Cream: " + whippedCream); 
+		System.out.format("|  Peppermint: %-25s|  Whipped Cream: %-20s", peppermint, whippedCream);
 	}
 
 }
