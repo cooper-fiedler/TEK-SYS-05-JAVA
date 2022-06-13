@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mountains</title>
+
+    <!-- bootstrap 5 link -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- font awesome kit  -->
+    <script src="https://kit.fontawesome.com/42b7cf7c2e.js" crossorigin="anonymous"></script>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <header>
+      <h1 class="heading">Mountains</h1>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="mountains.html">Mountains</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header section ends -->
+
+    <!-- mountains section start  -->
+    <section class="mountains">
+      <div class="content">
+        <select id="toggle">
+          <option selected>Select a mountain</option>
+          <option value="1" onclick="showTable()">Mt. Rainier</option>
+          <option value="2">Mt. Sneffels</option>
+          <option value="3">Mt. Denali</option>
+          <option value="4">Mt. Whitney</option>
+          <option value="5">Mt. Elbert</option>
+        </select>
+        <br /><br />
+        <table class="table" id="1">
+          <tr class="row">
+            <th>Name</th>
+            <th>Elevation</th>
+            <th>Difficulty</th>
+            <th>Glaciated</th>
+            <th>Location</th>
+            <th>Completed</th>
+          </tr>
+          <tr>
+            <td>Mt. Rainier</td>
+            <td>14,416 ft.</td>
+            <td>Advanced</td>
+            <td>Yes</td>
+            <td>Washington</td>
+            <td>Yes</td>
+          </tr>
+        </table>
+        <table class="table table-hover" id="2">
+          <tr class="table-secondary">
+            <th>Name</th>
+            <th>Elevation</th>
+            <th>Difficulty</th>
+            <th>Glaciated</th>
+            <th>Location</th>
+            <th>Completed</th>
+          </tr>
+          <tr>
+            <td>Mt. Sneffels</td>
+            <td>14,158 ft.</td>
+            <td>Intermediate</td>
+            <td>No</td>
+            <td>Colorado</td>
+            <td>Yes</td>
+          </tr>
+        </table>
+        <table class="table table-hover" id="3">
+          <tr class="table-secondary">
+            <th>Name</th>
+            <th>Elevation</th>
+            <th>Difficulty</th>
+            <th>Glaciated</th>
+            <th>Location</th>
+            <th>Completed</th>
+          </tr>
+          <tr>
+            <td>Mt. Denali</td>
+            <td>20,310 ft.</td>
+            <td>Expert</td>
+            <td>Yes</td>
+            <td>Alaska</td>
+            <td>No</td>
+          </tr>
+        </table>
+        <table class="table table-hover" id="4">
+          <tr class="table-secondary">
+            <th>Name</th>
+            <th>Elevation</th>
+            <th>Difficulty</th>
+            <th>Glaciated</th>
+            <th>Location</th>
+            <th>Completed</th>
+          </tr>
+          <tr>
+            <td>Mt. Whitney</td>
+            <td>14,505 ft.</td>
+            <td>Advanced</td>
+            <td>Yes</td>
+            <td>California</td>
+            <td>No</td>
+          </tr>
+        </table>
+        <table class="table table-hover" id="5">
+          <tr class="table-secondary">
+            <th>Name</th>
+            <th>Elevation</th>
+            <th>Difficulty</th>
+            <th>Glaciated</th>
+            <th>Location</th>
+            <th>Completed</th>
+          </tr>
+          <tr>
+            <td>Mt. Elbert</td>
+            <td>14,440 ft.</td>
+            <td>Advanced</td>
+            <td>Yes</td>
+            <td>Colorado</td>
+            <td>No</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="content">
+        <h1>My Mountain List <i class="fa-solid fa-person-hiking"></i></h1>
+        <p>This is a list of mountains I have climbed or want to climb in the future.</p>
+        <p>
+          Use the dropdown to select a mountain and view information about it. The table will show relevant information about the mountains that are on my list to climb or climbs that I have completed.
+        </p>
+        <a href="contact.html"><button class="btn">Contact Me</button></a>
+      </div>
+    </section>
+    <!-- mountains section ends -->
+    <!-- footer section starts  -->
+
+    <div class="footer">
+      <div class="box-container">
+        <div class="box">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="mountains.html">Mountains</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <h1 class="credit">Created by <a href="#">Cooper Fiedler</a> | May 2022</h1>
+    </div>
+
+    <!-- footer section ends -->
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+
+    <!-- custom bootstrap 5 js file link-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

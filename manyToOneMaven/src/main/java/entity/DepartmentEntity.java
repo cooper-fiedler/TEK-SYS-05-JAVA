@@ -18,8 +18,8 @@ public class DepartmentEntity implements Serializable {
 	private int deptId;
 	private String deptName;
 
-	@OneToMany(targetEntity = TeacherEntity.class, cascade = { CascadeType.ALL })
-	private List teacherList;
+//	@OneToMany(targetEntity = TeacherEntity.class, cascade = { CascadeType.ALL })
+//	private List teacherList;
 
 	public DepartmentEntity() {
 
@@ -32,13 +32,13 @@ public class DepartmentEntity implements Serializable {
 
 	// Getters and Setters
 
-	public List getTeacherList() {
-		return teacherList;
-	}
+//	public List getTeacherList() {
+//		return teacherList;
+//	}
 
-	public void setTeacherList(List teacherList) {
-		this.teacherList = teacherList;
-	}
+//	public void setTeacherList(List teacherList) {
+//		this.teacherList = teacherList;
+//	}
 
 	public int getDeptId() {
 		return deptId;

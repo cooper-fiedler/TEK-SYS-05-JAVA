@@ -1,0 +1,15 @@
+/* section {
+  font-size: 1.5rem;
+}
+
+.mountain {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+} */
+
+.table {
+  display: none;
+}

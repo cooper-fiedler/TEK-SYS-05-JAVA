@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap Button demo</title>
+   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>   
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+<style>
+.dropdown-menu{
+    background-color: #A8DEEE;
+    border: 1px solid #428BCA;
+}
+.divider{
+    border: 1px dashed #428BCA;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h1>A plit button dropdown demo</h1>
+<!-- Single button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-info">Split Dropdown Menu</button>
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="https://www.jquery-az.com/">Home</a></li>
+    <li><a href="https://www.jquery-az.com/bootstrap-tips-tutorials/">Bootstrap</a></li>
+    <li><a href="https://www.jquery-az.com/jquery-tips/">jQuery</a></li>
+    <li><a href="https://www.jquery-az.com/jquery-ui/">jQuery UI</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="https://www.jquery-az.com/php-tutorials/">PHP</a></li>
+  </ul>
+</div>
+
+
+   </div> 
+</body>
+</html>
