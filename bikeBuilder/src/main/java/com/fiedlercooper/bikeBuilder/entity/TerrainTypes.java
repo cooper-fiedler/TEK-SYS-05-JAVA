@@ -2,7 +2,6 @@ package com.fiedlercooper.bikeBuilder.entity;
 
 import java.util.List;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -29,22 +28,22 @@ public class TerrainTypes {
 	@Column(name = "type", unique = true)
 	private String type;
 
-	@ManyToMany(cascade = CascadeType.ALL)
+	@ManyToMany
 	@JoinTable(name = "terrain_types_forks", joinColumns = {
 			@JoinColumn(name = "terrain_types_id") }, inverseJoinColumns = { @JoinColumn(name = "fork_id") })
 	private List<Fork> forks;
 
-	@ManyToMany(cascade = CascadeType.ALL)
+	@ManyToMany
 	@JoinTable(name = "terrain_types_frames", joinColumns = {
 			@JoinColumn(name = "terrain_types_id") }, inverseJoinColumns = { @JoinColumn(name = "frame_id") })
 	private List<Frame> frames;
 	
-	@ManyToMany(cascade = CascadeType.ALL)
+	@ManyToMany
 	@JoinTable(name = "terrain_types_brakes", joinColumns = {
 			@JoinColumn(name = "terrain_types_id") }, inverseJoinColumns = { @JoinColumn(name = "brake_id") })
 	private List<Brake> brakes;
 	
-	@ManyToMany(cascade = CascadeType.ALL)
+	@ManyToMany
 	@JoinTable(name = "terrain_types_drive_trains", joinColumns = {
 			@JoinColumn(name = "terrain_types_id") }, inverseJoinColumns = { @JoinColumn(name = "drive_train_id") })
 	private List<DriveTrain> driveTrains;

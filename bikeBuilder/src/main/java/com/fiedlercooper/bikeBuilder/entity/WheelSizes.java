@@ -2,7 +2,6 @@ package com.fiedlercooper.bikeBuilder.entity;
 
 import java.util.List;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -30,17 +29,17 @@ public class WheelSizes {
 	@Column(name = "size", unique = true)
 	private String size;
 
-	@ManyToMany(cascade = CascadeType.ALL)
+	@ManyToMany
 	@JoinTable(name = "wheel_sizes_forks", joinColumns = { @JoinColumn(name = "wheel_size_id") }, inverseJoinColumns = {
 			@JoinColumn(name = "fork_id") })
 	private List<Fork> forks;
 	
-	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+	@OneToMany(orphanRemoval = true)
 	@JoinTable(name = "wheel_sizes_wheel_sets", joinColumns = { @JoinColumn(name = "wheel_size_id") }, inverseJoinColumns = {
 			@JoinColumn(name = "wheel_set_id") })
 	private List<WheelSet> wheelSets;
 
-	@ManyToMany(cascade = CascadeType.ALL)
+	@ManyToMany
 	@JoinTable(name = "wheel_sizes_frames", joinColumns = {
 			@JoinColumn(name = "wheel_size_id") }, inverseJoinColumns = { @JoinColumn(name = "frame_id") })
 	private List<Frame> frames;
