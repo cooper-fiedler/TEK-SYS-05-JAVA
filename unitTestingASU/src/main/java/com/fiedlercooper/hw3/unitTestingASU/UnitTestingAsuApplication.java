@@ -1,4 +1,4 @@
-package com.fiedlercooper.hw1.unitTestingASU;
+package com.fiedlercooper.hw3.unitTestingASU;
 
 import java.util.*;
 import java.util.Collections;
@@ -21,7 +21,9 @@ public class UnitTestingAsuApplication {
 
 		// 2) Put array elements in different buckets
 		for (int i = 0; i < n; i++) {
-			float idx = arr[i] * n;
+			// Introducing Data Flow Anomaly #1: A variable is defined and then immediately redefined.
+			float idx = 1 * n;
+			idx = arr[i] * n;
 			buckets[(int) idx].add(arr[i]);
 		}
 
@@ -32,6 +34,8 @@ public class UnitTestingAsuApplication {
 
 		// 4) Concatenate all buckets into arr[]
 		int index = 0;
+		// Introducing Data Flow Anomaly #2: A variable is defined but never referenced.
+		int arrayLength = 0;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < buckets[i].size(); j++) {
 				arr[index++] = buckets[i].get(j);
@@ -57,4 +61,6 @@ public class UnitTestingAsuApplication {
 
 //This code is contributed by Himangshu Shekhar Jha
 //Geeks for Geeks, Bucket Sort, 22 October, 2021
+
+
 

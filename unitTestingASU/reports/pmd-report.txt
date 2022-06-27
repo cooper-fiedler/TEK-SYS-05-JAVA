@@ -1,0 +1,140 @@
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:1:	PackageCase:	PackageCase: Package name contains upper case characters
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:1:	PackageCase:	PackageCase: Package name contains upper case characters
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:4:	DuplicateImports:	DuplicateImports: Avoid duplicate imports such as 'java.util.Collections'
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:4:	DuplicateImports:	DuplicateImports: Avoid duplicate imports such as 'java.util.Collections'
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:6:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:6:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:6:	UseUtilityClass:	UseUtilityClass: All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:6:	UseUtilityClass:	UseUtilityClass: All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:10:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the bucketSort method if you want a default access modifier
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:10:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the bucketSort method if you want a default access modifier
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:10:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:10:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:10:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'n' is not assigned and could be declared final
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:10:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'n' is not assigned and could be declared final
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:10:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:10:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:11:	IfStmtsMustUseBraces:	IfStmtsMustUseBraces: Avoid using if statements without curly braces
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:11:	IfStmtsMustUseBraces:	IfStmtsMustUseBraces: Avoid using if statements without curly braces
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:12:	ControlStatementBraces:	ControlStatementBraces: This statement should have braces
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:12:	ControlStatementBraces:	ControlStatementBraces: This statement should have braces
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:16:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'buckets' (lines '16'-'19').
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:16:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'buckets' (lines '16'-'19').
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:16:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'buckets' (lines '16'-'49').
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:16:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'buckets' (lines '16'-'49').
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:16:	ReplaceVectorWithList:	ReplaceVectorWithList: Consider replacing this Vector with the newer java.util.List
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:16:	ReplaceVectorWithList:	ReplaceVectorWithList: Consider replacing this Vector with the newer java.util.List
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:19:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'buckets' (lines '19'-'19').
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:19:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'buckets' (lines '19'-'19').
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:19:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'buckets' (lines '19'-'49').
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:19:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'buckets' (lines '19'-'49').
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:19:	UseDiamondOperator:	UseDiamondOperator: Explicit type arguments can be replaced by Diamond Operator
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:19:	UseDiamondOperator:	UseDiamondOperator: Explicit type arguments can be replaced by Diamond Operator
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:24:	CommentSize:	CommentSize: Comment is too large: Line too long
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:24:	CommentSize:	CommentSize: Comment is too large: Line too long
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:25:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'idx' (lines '25'-'26').
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:25:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'idx' (lines '25'-'26').
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:25:	UnusedAssignment:	UnusedAssignment: The initializer for variable 'idx' is never used (overwritten on line 26)
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:25:	UnusedAssignment:	UnusedAssignment: The initializer for variable 'idx' is never used (overwritten on line 26)
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:36:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'index' (lines '36'-'49').
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:36:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'index' (lines '36'-'49').
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:37:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'length' could be declared final
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:37:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'length' could be declared final
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:37:	UnusedLocalVariable:	UnusedLocalVariable: Avoid unused local variables such as 'length'.
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:37:	UnusedLocalVariable:	UnusedLocalVariable: Avoid unused local variables such as 'length'.
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:43:	SystemPrintln:	SystemPrintln: System.out.println is used
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:43:	SystemPrintln:	SystemPrintln: System.out.println is used
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:44:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'el' could be declared final
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:44:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'el' could be declared final
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:45:	SystemPrintln:	SystemPrintln: System.out.print is used
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:45:	SystemPrintln:	SystemPrintln: System.out.print is used
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:47:	SystemPrintln:	SystemPrintln: System.out.println is used
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:47:	SystemPrintln:	SystemPrintln: System.out.println is used
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:52:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:52:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:52:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'args' is not assigned and could be declared final
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:52:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'args' is not assigned and could be declared final
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:53:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'arr' could be declared final
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:53:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'arr' could be declared final
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:55:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'n' could be declared final
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:55:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'n' could be declared final
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:55:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/main/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplication.java:55:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:1:	PackageCase:	PackageCase: Package name contains upper case characters
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:1:	PackageCase:	PackageCase: Package name contains upper case characters
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:7:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:7:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:11:	CommentSize:	CommentSize: Comment is too large: Line too long
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:11:	CommentSize:	CommentSize: Comment is too large: Line too long
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:14:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the testFirstValue method if you want a default access modifier
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:14:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the testFirstValue method if you want a default access modifier
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:15:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'actual' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:15:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'actual' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:16:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'expected' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:16:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'expected' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:17:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'n' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:17:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'n' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:17:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:17:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:20:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:20:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:24:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the testLastValue method if you want a default access modifier
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:24:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the testLastValue method if you want a default access modifier
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:25:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'actual' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:25:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'actual' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:26:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'expected' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:26:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'expected' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:27:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'n' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:27:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'n' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:27:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:27:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:30:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:30:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:34:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the testZeroValue method if you want a default access modifier
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:34:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the testZeroValue method if you want a default access modifier
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:35:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'actual' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:35:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'actual' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:36:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'expected' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:36:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'expected' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:37:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'n' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:37:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'n' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:37:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:37:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:40:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:40:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:44:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the testWholeArray method if you want a default access modifier
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:44:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the testWholeArray method if you want a default access modifier
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:45:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'actual' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:45:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'actual' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:46:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'expected' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:46:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'expected' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:47:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'n' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:47:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'n' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:47:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:47:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:52:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'actualArray' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:52:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'actualArray' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:52:	UseDiamondOperator:	UseDiamondOperator: Explicit type arguments can be replaced by Diamond Operator
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:52:	UseDiamondOperator:	UseDiamondOperator: Explicit type arguments can be replaced by Diamond Operator
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:53:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'el' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:53:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'el' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:57:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'expectedArray' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:57:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'expectedArray' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:57:	UseDiamondOperator:	UseDiamondOperator: Explicit type arguments can be replaced by Diamond Operator
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:57:	UseDiamondOperator:	UseDiamondOperator: Explicit type arguments can be replaced by Diamond Operator
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:58:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'el' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:58:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'el' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:62:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:62:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:66:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the testEmptyArray method if you want a default access modifier
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:66:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the testEmptyArray method if you want a default access modifier
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:67:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'actual' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:67:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'actual' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:68:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'n' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:68:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'n' could be declared final
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:68:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:68:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:74:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/fiedlercooper/hw1/unitTestingASU/UnitTestingAsuApplicationTests.java:74:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message

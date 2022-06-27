@@ -1,70 +1,175 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
 <meta charset="ISO-8859-1">
 <title>Bike Builder - All Builds</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+	crossorigin="anonymous"></script>
+
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
 	rel="stylesheet"
 	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 	crossorigin="anonymous">
+
+<link rel="stylesheet" th:href="@{/css/styles.css}" />
+
+<script src="https://kit.fontawesome.com/c1734b8f2f.js"
+	crossorigin="anonymous"></script>
+
 </head>
 <body>
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-		<!-- Brand -->
-		<a class="navbar-brand" href="#">BikeBuilder</a>
+	<!-- MAIN NAV BAR START -->
+	<div class="main-nav-bar">
+		<nav class="navbar navbar-expand-lg navbar-dark"
+			style="background-color: black">
+			<div class="container-fluid">
+				<a class="navbar-brand text-warning" th:href="@{/welcome}">BikeBuilder</a>
+				<button class="navbar-toggler" type="button"
+					data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link active"
+							aria-current="page" th:href="@{/welcome}">Home</a></li>
+						<li class="nav-item"><a class="nav-link" th:href="@{/about}">About</a></li>
+						<li class="nav-item"><a class="nav-link"
+							th:href="@{/gallery}">Gallery</a></li>
+						<li class="nav-item dropdown"><a
+							class="nav-link dropdown-toggle" href="#"
+							id="navbarDropdownMenuLink" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"> Builder </a>
+							<ul class="dropdown-menu"
+								aria-labelledby="navbarDropdownMenuLink">
+								<li><a class="dropdown-item" th:href="@{/bikes}">All
+										Bikes</a></li>
+								<li><a class="dropdown-item" th:href="@{/bikes/new}">New
+										Build</a></li>
+							</ul></li>
+					</ul>
+				</div>
+				<form th:action="@{/logout}" method="post">
+					<button type="submit" value="Logout" class="btn btn-warning">
+						<i class="fa-solid fa-right-from-bracket"></i> Logout
+					</button>
+				</form>
 
-		<!-- Toggler/collapsibe Button -->
-		<button class="navbar-toggler" type="button" data-toggle="collapse"
-			data-target="#collapsibleNavbar">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+			</div>
+		</nav>
+	</div>
+	<!-- MAIN NAV BAR END -->
 
-		<!-- Navbar links -->
-		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link" th:href="@{/bikes}">Builder</a></li>
-				<li class="nav-item"><a class="nav-link" th:href="@{/gallery}">Gallery</a></li>
-			</ul>
+	<!-- MAIN CONTAINER START -->
+	<section class="bikes">
+		<div class="container">
+			<br>
+			<div class="row">
+
+				<h1>
+					List of Builds<i class="fa-solid fa-pen-circle"></i>
+				</h1>
+
+			</div>
+
+			<div class="row">
+				<div class="col-lg-3">
+					<a th:href="@{/bikes/new}" class="btn btn-warning btn-md mb-3">
+						New Build</a>
+				</div>
+			</div>
+			<table class="table table-dark table-striped">
+				<thead class="table-dark">
+					<tr>
+						<th>Frame</th>
+						<th>Fork</th>
+						<th>Drive Train</th>
+						<th>Brakes</th>
+						<th>Wheel Set</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr th:each="bike: ${bikes}">
+						<td
+							th:text="${bike.bikeFrame.brand} + ' ' + ${bike.bikeFrame.model}"></td>
+						<td
+							th:text="${bike.bikeFork.brand} + ' ' + ${bike.bikeFork.model}"></td>
+						<td
+							th:text="${bike.bikeDriveTrain.brand} + ' ' + ${bike.bikeDriveTrain.model}"></td>
+						<td
+							th:text="${bike.bikeBrake.brand} + ' ' + ${bike.bikeBrake.model}"></td>
+						<td
+							th:text="${bike.bikeWheelSet.brand} + ' ' + ${bike.bikeWheelSet.model}"></td>
+						<td><a id="editButtonId" class="detailButton" th:href="@{#}"
+							th:onClick="|showModal('${bike.id}')|"><i
+								class="fa-solid fa-ellipsis-vertical whiteiconcolor"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+							<a th:href="@{/bikes/edit/{id}(id=${bike.id})}"><i
+								class="fa-solid fa-pen whiteiconcolor"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+							<a th:href="@{/bikes/{id}(id=${bike.id})}"><i
+								class="fa-solid fa-trash-can rediconcolor"></i></a></td>
+					</tr>
+				</tbody>
+
+			</table>
+
 		</div>
-	</nav>
+	</section>
+	<!-- MAIN CONTAINER END -->
 
-	<div class="container">
-		<div class="row">
-			<h1>List of Builds</h1>
-		</div>
 
-		<div class="row">
-			<div class="col-lg-3">
-				<a th:href="@{/bikes/new}" class="btn btn-primary btn-sm mb-3">
-					New Build</a>
+	<!-- MODAL START -->
+	<div class="modal fade" id="exampleModal" tabindex="-1"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Bike Builder</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="container-sm">
+						<div class="card" style="flex: column">
+							<img src="images/card.png" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<h5 class="card-title" id="modalHeader">Bike Build #</h5>
+								<p class="card-text">Review the specifications below as well
+									as part costs and total build cost.</p>
+							</div>
+							<div class="card" style="width: 100">
+								<div class="card-header" id="modalName">Featured</div>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item" id="modalFork"></li>
+									<li class="list-group-item" id="modalDriveTrain"></li>
+									<li class="list-group-item" id="modalBrake"></li>
+									<li class="list-group-item" id="modalWheelSet"></li>
+								</ul>
+							</div>
+							<div class="card-footer" id="modalTotal">
+								Total Cost: <br />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary"
+						data-bs-dismiss="modal">Back</button>
+				</div>
 			</div>
 		</div>
-		<table class="table table-striped table-bordered">
-			<thead class="table-dark">
-				<tr>
-					<th>Frame</th>
-					<th>Fork</th>
-					<th>Drive Train</th>
-					<th>Brakes</th>
-					<th>Wheel Set</th>
-					<th>Actions</th>
-				</tr>
-			</thead>
-
-			<tbody>
-				<tr th:each="bike: ${bikes}">
-					<td th:text="${bike.bikeFrame.brand} + ' ' + ${bike.bikeFrame.model} "></td>
-					<td th:text="${bike.bikeFork.brand} + ' ' + ${bike.bikeFork.model}"></td>
-					<td th:text="${bike.bikeDriveTrain.brand} + ' ' + ${bike.bikeDriveTrain.model}"></td>
-					<td th:text="${bike.bikeBrake.brand} + ' ' + ${bike.bikeBrake.model}"></td>
-					<td th:text="${bike.bikeWheelSet.brand} + ' ' + ${bike.bikeWheelSet.model}"></td>
-					<td><a th:href="@{/bikes/edit/{id}(id=${bike.id})}"
-						class="btn btn-primary">Update</a> <a
-						th:href="@{/bikes/{id}(id=${bike.id})}"
-						class="btn btn-danger">Delete</a></td>
-				</tr>
-			</tbody>
-
-		</table>
-
 	</div>
+
+	<!-- MODAL END -->
+	<script type="text/javascript" th:src="@{/js/details.js}"
+		src="../static/js/details.js"></script>
+
 </body>
 </html>

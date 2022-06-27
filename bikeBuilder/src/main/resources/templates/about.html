@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Bike Builder - Edit Bike</title>
+<title>Bike Builder - About Page</title>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script
@@ -20,6 +20,7 @@
 
 <script src="https://kit.fontawesome.com/c1734b8f2f.js"
 	crossorigin="anonymous"></script>
+
 </head>
 <body>
 	<!-- MAIN NAV BAR START -->
@@ -65,59 +66,30 @@
 	</div>
 	<!-- MAIN NAV BAR END -->
 
-	<section class="edit">
-		<div class="container">
-			<br> <br>
-			<div class="row">
-				<div
-					class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
-					<br>
-					<h1 class="text-center">Update Bike</h1>
-					<div class="card-body">
-						<form th:action="@{/bikes/{id} (id=${bike.id})}"
-							th:object="${bike}" method="POST">
-
-							<label> Bike Frame </label> <select id="frameEdit"
-								name="bikeFrame" class="form-control" onchange="getForksEdit()">
-								<option th:value="*{bikeFrame.id}" hidden=true
-									th:text="*{bikeFrame.brand +' '+ bikeFrame.model +': $' + bikeFrame.cost}"></option>
-								<option th:each="frame:${frames}" th:value="${frame.id}"
-									th:text="${frame.brand +' '+ frame.model + ': $' + frame.cost}"></option>
-							</select> <label> Bike Fork </label> <select id="forkEdit" name="bikeFork"
-								class="form-control" onchange="getComponentsEdit()">
-								<option th:value="*{bikeFork.id}" hidden=true
-									th:text="*{bikeFork.brand +' '+ bikeFork.model +': $' + bikeFork.cost}"></option>
-
-							</select> <label> Bike Drive Train </label> <select id="driveTrainEdit"
-								name="bikeDriveTrain" class="form-control">
-								<option th:value="*{bikeDriveTrain.id}" hidden=true
-									th:text="*{bikeDriveTrain.brand +' '+ bikeDriveTrain.model +': $' + bikeDriveTrain.cost}"></option>
-
-							</select> <label> Bike Brakes </label> <select id="brakeEdit"
-								name="bikeBrake" class="form-control">
-								<option th:value="*{bikeBrake.id}" hidden=true
-									th:text="*{bikeBrake.brand +' '+ bikeBrake.model +': $' + bikeBrake.cost}"></option>
-
-							</select> <label> Bike Wheel Set </label> <select id="wheelSetEdit"
-								name="bikeWheelSet" class="form-control">
-								<option th:value="*{bikeWheelSet.id}" hidden=true
-									th:text="*{bikeWheelSet.brand +' '+ bikeWheelSet.model +': $' + bikeWheelSet.cost}"></option>
-
-							</select>
-
-							<div class="box-footer">
-								<br>
-								<button type="submit" class="btn btn-warning">Submit</button>
-							</div>
-
-						</form>
-
-					</div>
-				</div>
-			</div>
+	<!-- MAIN CONTAINER START -->
+	<section class="about">
+		<div class="container-sm" style="background:  rgba(0%, 0%, 0%, 0.70);">
+		<br>
+			<h1 style="color: rgb(255, 193, 7); text-align: center;">What is BikeBuilder?</h1>
+			<h5 style="color: white;">
+				With so many components in existence within the mountain biking
+				universe, it can be overwhelming to choose the right part
+				for your build.
+			</h5>
+			<h5 style="color: white;">BikeBuilder takes the guess work out
+				of compatibility by comparing parts and ensuring compatibility requirements are met
+				throughout the entire build process.</h5>
+				<h1 style="color: rgb(255, 193, 7); text-align: center;"><i class="fa-solid fa-bolt"></i></h1>
+				<h2 style="color: white; text-align: center;">Fast & Efficient Build Process</h2><br>
+				<h1 style="color: rgb(255, 193, 7); text-align: center;"><i class="fa-solid fa-gears"></i></h1>
+				<h2 style="color: white; text-align: center;">Automatic Compatibility Checking</h2><br>
+				<h1 style="color: rgb(255, 193, 7); text-align: center;"><i class="fa-solid fa-hand-holding-dollar"></i></h1>
+				<h2 style="color: white; text-align: center;">Cost Comparison for Lowest Price</h2>
+				<br>
 		</div>
 	</section>
-	<script type="text/javascript" th:src="@{/js/edit_script.js}"
-		src="../static/js/edit_script.js"></script>
+	<!-- MAIN CONTAINER END -->
+
+
 </body>
 </html>

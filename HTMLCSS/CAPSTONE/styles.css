@@ -24,7 +24,7 @@
 .welcome {
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: space-around;
     background-image: url(images/home.jpg);
     background-repeat: no-repeat;

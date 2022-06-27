@@ -14,6 +14,7 @@
   outline: none;
   border: none;
   transition: all 0.2s linear;
+  
 }
 
 *::selection {
@@ -21,12 +22,70 @@
   color: #fff;
 }
 
+.whiteiconcolor {color: white;}
+.blackiconcolor {color:black;}
+.rediconcolor {color:red;}
+
+.bikes {
+	min-height: 100vh;
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    background-image: url('/images/home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+}
+
+.new {
+	min-height: 100vh;
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    background-image: url('/images/home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+	
+}
+
+.edit {
+	min-height: 100vh;
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    background-image: url('/images/home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+	
+}
+
 .welcome {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-image: url(images/home.jpg);
+    background-image: url('/images/welcome.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+  }
+  
+  .about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url('/images/about.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -34,15 +93,16 @@
     flex-wrap: wrap;
   }
 
-  .gallery {
+.gallery {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-image: url(images/home.jpg);
+    background-image: url('/images/home.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     flex-wrap: wrap;
   }
+  

@@ -1,8 +1,10 @@
-package com.fiedlercooper.hw1.unitTestingASU;
+package com.fiedlercooper.hw3.unitTestingASU;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.ArrayList;
 import org.junit.jupiter.api.Test;
+
+import com.fiedlercooper.hw3.unitTestingASU.UnitTestingAsuApplication;
 
 class UnitTestingAsuApplicationTests {
 	
@@ -42,16 +44,15 @@ class UnitTestingAsuApplicationTests {
 
 	@Test  //Tests to verify that both arrays are the same and share the same values
 	void testWholeArray() {
-		float actual[] = { (float) 0.345, (float) 6.678, (float) 0.123, (float) 0.456, (float) 0.567, (float) 0.234 };
+		float actual[] = { (float) 0.345, (float) 0.678, (float) 0.123, (float) 0.456, (float) 0.567, (float) 0.234 };
 		float expected[] = { (float) 0.123, (float) 0.234, (float) 0.345, (float) 0.456, (float) 0.567, (float) 0.678 };
 		int n = actual.length;
-
 		UnitTestingAsuApplication.bucketSort(actual, n);
 		
 		// Converted to Array list for better visibility and operation within arrays
 		
 		ArrayList<Float> actualArray = new ArrayList<Float>();
-		for (float el : expected) {
+		for (float el : actual) {
 			actualArray.add(el);
 		}
 		
@@ -61,6 +62,16 @@ class UnitTestingAsuApplicationTests {
 		}
 
 		assertEquals(expectedArray, actualArray);
+	}
+	
+	@Test  //Tests the first if statement for a length of zero
+	void testEmptyArray() {
+		float actual[] = {};
+		int n = actual.length;
+		UnitTestingAsuApplication.bucketSort(actual, n);
+		
+
+		assertEquals(n, 0);
 	}
 }
 
