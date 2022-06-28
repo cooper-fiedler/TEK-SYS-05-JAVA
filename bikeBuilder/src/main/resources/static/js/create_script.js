@@ -32,6 +32,22 @@ function getForks() {
 			$('#fork').append($('<option>', {
 				text: 'Select an option...'
 			}));
+			$("#driveTrain").empty()
+			$("#driveTrain").prop("disabled", true);
+			$('#driveTrain').append($('<option>', {
+				text: 'Select an option...'
+			}));
+			$("#brake").empty()
+			$("#brake").prop("disabled", true);
+			$('#brake').append($('<option>', {
+				text: 'Select an option...'
+			}));
+			$("#wheelSet").empty()
+			$("#wheelSet").prop("disabled", true);
+			$('#wheelSet').append($('<option>', {
+				text: 'Select an option...'
+			}));
+			$('#btn-sel').prop("disabled", true);
 			$.each(forks, function(i, fork) {
 				$('#fork').append($('<option>', {
 					value: fork.id,
