@@ -9,6 +9,8 @@ import javax.persistence.Table;
 
 import lombok.Data;
 
+// BRAKE ENTITY WITH ID, BRAND, MODEL, AND COST
+
 @Data
 @Entity
 @Table(name = "brake_table")

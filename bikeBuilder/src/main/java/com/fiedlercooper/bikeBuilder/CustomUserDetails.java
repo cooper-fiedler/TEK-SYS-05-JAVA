@@ -7,6 +7,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import com.fiedlercooper.bikeBuilder.entity.User;
  
+// USER DETAILS OPERATIONS
+
+@SuppressWarnings("serial")
 public class CustomUserDetails implements UserDetails {
  
     private User user;

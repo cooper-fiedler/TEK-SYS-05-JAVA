@@ -71,7 +71,7 @@ class BikeBuilderApplicationServiceTests {
 	void frameServiceTest() {
 	Frame frame = frameService.getFrameById((long) 1);
 	
-	assertEquals(frame.getCost(), 6000);
+	assertEquals(frame.getCost(), (float) 6000.55);
 		
 	}
 	

@@ -10,6 +10,8 @@ import javax.persistence.Table;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+// USER ENTITY WITH ID, EMAIL, PASSWORD, FIRST NAME, AND LAST NAME
+
 @Data
 @NoArgsConstructor
 @Entity

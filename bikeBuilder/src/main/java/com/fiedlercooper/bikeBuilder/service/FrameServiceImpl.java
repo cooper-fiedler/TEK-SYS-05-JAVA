@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 import com.fiedlercooper.bikeBuilder.entity.Frame;
 import com.fiedlercooper.bikeBuilder.repository.FrameRepository;
 
+// SERVICE IMPLEMENTATION FOR INTERFACE WITH GENERAL CRUD OPERATIONS
+
 @Service
 public class FrameServiceImpl implements FrameService{
 	private FrameRepository frameRepository;

@@ -4,6 +4,8 @@ import java.util.List;
 
 import com.fiedlercooper.bikeBuilder.entity.DriveTrain;
 
+//INTERFACE FOR GENERAL CRUD OPERATIONS
+
 public interface DriveTrainService {
 	List<DriveTrain> getAllDriveTrains();
 

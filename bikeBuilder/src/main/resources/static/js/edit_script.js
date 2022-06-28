@@ -1,22 +1,31 @@
 $(document).ready(function() {
-	
+
+	$("select").change(function() {
+		if ($("#driveTrainEdit").find(":selected").val() !== "Select an option..." && $("#brakeEdit").find(":selected").val() !== "Select an option..." && $("#wheelSetEdit").find(":selected").val() !== "Select an option...") {
+			$('#btn-sel').prop("disabled", false);
+		} else {
+			$('#btn-sel').prop("disabled", true);
+		}
+	});
+
 	var firstId = $("#frameEdit").find(":selected").val();
 	var href = 'getForks/?id=' + firstId;
 	$.get(href, function(forks, status) {
 		console.log(forks)
-		
+
 		$.each(forks, function(i, fork) {
 			$('#forkEdit').append($('<option>', {
 				value: fork.id,
 				text: fork.brand + ' ' + fork.model + ': $' + fork.cost.toFixed(2)
 			}));
 		});
+
 	})
 	var forkId = $("#forkEdit").find(":selected").val()
 	var href = 'getComponents/?id=' + forkId;
 	$.get(href, function(results, status) {
 		console.log(results)
-	
+
 		var driveTrains = results[0];
 		var brakes = results[1];
 		var wheelSets = results[2];
@@ -66,6 +75,19 @@ function getForksEdit() {
 					text: fork.brand + ' ' + fork.model + ': $' + fork.cost.toFixed(2)
 				}));
 			});
+			$("#driveTrainEdit").empty()
+			$('#driveTrainEdit').append($('<option>', {
+				text: 'Select an option...'
+			}));
+			$("#brakeEdit").empty()
+			$('#brakeEdit').append($('<option>', {
+				text: 'Select an option...'
+			}));
+			$("#wheelSetEdit").empty()
+			$('#wheelSetEdit').append($('<option>', {
+				text: 'Select an option...'
+			}));
+			$('#btn-sel').prop("disabled", true);
 		})
 	}
 }
@@ -112,6 +134,7 @@ function getComponentsEdit() {
 					text: wheelSet.brand + ' ' + wheelSet.model + ': $' + wheelSet.cost.toFixed(2)
 				}));
 			});
+			$('#btn-sel').prop("disabled", true);
 
 		})
 	}

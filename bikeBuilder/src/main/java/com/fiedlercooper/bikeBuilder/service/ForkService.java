@@ -4,6 +4,8 @@ import java.util.List;
 
 import com.fiedlercooper.bikeBuilder.entity.Fork;
 
+//INTERFACE FOR GENERAL CRUD OPERATIONS
+
 public interface ForkService {
 	List<Fork> getAllForks();
 

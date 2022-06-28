@@ -66,7 +66,7 @@ class BikeBuilderApplicationQueryTests {
 	void brakeQueryTest() {
 	List<Brake> brakes = brakeRepository.findBrakeByTerrainType((long) 1);
 	
-	assertEquals(brakes.get(0).getCost(), 224);		
+	assertEquals(brakes.get(0).getCost(), (float) 224.99);		
 	}
 	
 	@Test

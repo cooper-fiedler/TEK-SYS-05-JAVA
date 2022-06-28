@@ -5,6 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.fiedlercooper.bikeBuilder.entity.Frame;
 
+// REPOSITORY TO EXTEND JPA REPO FOR ADDITIONAL DATABASE METHODS, QUERIES, AND CONTROLS
 
 public interface FrameRepository extends JpaRepository<Frame, Long>{
 

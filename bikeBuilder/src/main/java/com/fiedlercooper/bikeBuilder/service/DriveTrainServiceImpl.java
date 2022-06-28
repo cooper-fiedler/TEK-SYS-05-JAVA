@@ -6,6 +6,8 @@ import org.springframework.stereotype.Service;
 import com.fiedlercooper.bikeBuilder.entity.DriveTrain;
 import com.fiedlercooper.bikeBuilder.repository.DriveTrainRepository;
 
+// SERVICE IMPLEMENTATION FOR INTERFACE WITH GENERAL CRUD OPERATIONS
+
 @Service
 public class DriveTrainServiceImpl implements DriveTrainService{
 	private DriveTrainRepository driveTrainRepository;

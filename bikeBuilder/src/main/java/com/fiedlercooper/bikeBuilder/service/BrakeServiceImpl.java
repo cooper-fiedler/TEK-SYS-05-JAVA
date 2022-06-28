@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 import com.fiedlercooper.bikeBuilder.entity.Brake;
 import com.fiedlercooper.bikeBuilder.repository.BrakeRepository;
 
+// SERVICE IMPLEMENTATION FOR INTERFACE WITH GENERAL CRUD OPERATIONS
+
 @Service
 public class BrakeServiceImpl implements BrakeService {
 	private BrakeRepository brakeRepository;

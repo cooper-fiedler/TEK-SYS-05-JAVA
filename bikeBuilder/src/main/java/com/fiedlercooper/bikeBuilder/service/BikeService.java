@@ -4,6 +4,8 @@ import java.util.List;
 
 import com.fiedlercooper.bikeBuilder.entity.Bike;
 
+// INTERFACE FOR GENERAL CRUD OPERATIONS
+
 public interface BikeService {
 	List<Bike> getAllBikes();
 

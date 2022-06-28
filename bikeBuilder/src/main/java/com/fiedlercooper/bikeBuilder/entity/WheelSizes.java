@@ -16,6 +16,9 @@ import javax.persistence.Table;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+// WHEEL SIZE ENTITY WITH ID, SIZE, AND JOIN RELATIONSHIPS WITH OTHER ENTITIES
+
+
 @Data
 @NoArgsConstructor
 @Entity
@@ -43,14 +46,5 @@ public class WheelSizes {
 	@JoinTable(name = "wheel_sizes_frames", joinColumns = {
 			@JoinColumn(name = "wheel_size_id") }, inverseJoinColumns = { @JoinColumn(name = "frame_id") })
 	private List<Frame> frames;
-
-	public void setAdditionalFrames(Frame newframe) {
-		this.frames.add(newframe);
-	}
-
-	public void setAdditionalForks(Fork newFork) {
-		this.forks.add(newFork);
-		
-	}
 
 }

@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 import com.fiedlercooper.bikeBuilder.entity.WheelSizes;
 import com.fiedlercooper.bikeBuilder.repository.WheelSizesRepository;
 
+// SERVICE IMPLEMENTATION FOR INTERFACE WITH GENERAL CRUD OPERATIONS
+
 @Service
 public class WheelSizeServiceImpl implements WheelSizeService{
 	private WheelSizesRepository wheelSizesRepository;

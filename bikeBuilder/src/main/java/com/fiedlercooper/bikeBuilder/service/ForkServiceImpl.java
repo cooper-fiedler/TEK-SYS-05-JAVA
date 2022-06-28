@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 import com.fiedlercooper.bikeBuilder.entity.Fork;
 import com.fiedlercooper.bikeBuilder.repository.ForkRepository;
 
+// SERVICE IMPLEMENTATION FOR INTERFACE WITH GENERAL CRUD OPERATIONS
+
 @Service
 public class ForkServiceImpl implements ForkService{
 	private ForkRepository forkRepository;

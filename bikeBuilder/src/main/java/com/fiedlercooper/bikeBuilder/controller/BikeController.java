@@ -12,6 +12,7 @@ import com.fiedlercooper.bikeBuilder.entity.Bike;
 import com.fiedlercooper.bikeBuilder.service.BikeService;
 import com.fiedlercooper.bikeBuilder.service.FrameService;
 
+// MAIN BIKE CONTROLLER FOR MAPPING
 
 @Controller
 public class BikeController {
@@ -26,28 +27,32 @@ public class BikeController {
 		this.bikeService = bikeService;
 	}
 
+	// BIKES.HTML PAGE AND MODEL ATTRIBUTES
 	@GetMapping("/bikes")
 	public String listBikes(Model model) {
 		model.addAttribute("bikes", bikeService.getAllBikes());
 		return "bikes";
 	}
 	
+	// GALLERY.HTML PAGE
 	@GetMapping("/gallery")
 	public String gallery() {
 		return "gallery";
 	}
 	
+	// ABOUT.HTML PAGE
 	@GetMapping("/about")
 	public String about() {
 		return "about";
 	}
 	
-	
+	// WELCOME.HTML PAGE
 	@GetMapping("/welcome")
 	public String welcome() {
 		return "welcome";
 	}
 
+	// CREATE_BIKE.HTML PAGE AND MODEL ATTRIBUTES
 	@GetMapping("/bikes/new")
 	public String createBikeForm(Model model) {
 		Bike bike = new Bike();
@@ -58,7 +63,7 @@ public class BikeController {
 	}
 	
 
-	
+	// DETAILS MODAL ON BIKES.HTML PAGE AND MODEL ATTRIBUTES
 	@GetMapping("bikes/details/{id}")
 	public String detailsPage(@PathVariable Long id, @ModelAttribute("bike") Bike bike, Model model) {
 		
@@ -73,12 +78,14 @@ public class BikeController {
 	}
 	
 
-
+	// SAVE NEW BIKE AND REDIRECT TO BIKES.HTML PAGE (POST TO DB)
 	@PostMapping("/bikes")
 	public String saveBike(@ModelAttribute("bike") Bike bike) {
 		bikeService.saveBike(bike);
 		return "redirect:/bikes";
 	}
+	
+	// EDIT_BIKE.HTML PAGE AND MODEL ATTRIBUTES
 	@GetMapping("/bikes/edit/{id}")
 	public String editBikeForm(@PathVariable Long id, Model model) {
 		model.addAttribute("bike", bikeService.getBikeById(id));
@@ -87,10 +94,11 @@ public class BikeController {
 		return "edit_bike";
 	}
 
+	// EDIT BIKE AND REDIRECT TO BIKES.HTML PAGE
 	@PostMapping("/bikes/{id}")
 	public String updateBike(@PathVariable Long id, @ModelAttribute("bike") Bike bike, Model model) {
 
-		// get bike from database by id
+		// GET BIKE FROM DATABASE BY ID
 		Bike existingBike = bikeService.getBikeById(id);
 		existingBike.setId(id);
 		existingBike.setBikeBrake(bike.getBikeBrake());
@@ -99,13 +107,12 @@ public class BikeController {
 		existingBike.setBikeFrame(bike.getBikeFrame());
 		existingBike.setBikeWheelSet(bike.getBikeWheelSet());
 	
-		// save updated bike object
+		// SAVE EDITED BIKE OBJECT
 		bikeService.updateBike(existingBike);
 		return "redirect:/bikes";
 	}
 
-	// handler method to handle delete bike request
-
+	// DELETE BIKE BY ID AND REDIRECT TO BIKES.HTML PAGE
 	@GetMapping("/bikes/{id}")
 	public String deleteBike(@PathVariable Long id) {
 		bikeService.deleteBikeById(id);

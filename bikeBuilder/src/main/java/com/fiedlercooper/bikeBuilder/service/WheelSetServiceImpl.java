@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 import com.fiedlercooper.bikeBuilder.entity.WheelSet;
 import com.fiedlercooper.bikeBuilder.repository.WheelSetRepository;
 
+// SERVICE IMPLEMENTATION FOR INTERFACE WITH GENERAL CRUD OPERATIONS
+
 @Service
 public class WheelSetServiceImpl implements WheelSetService{
 	private WheelSetRepository wheelSetRepository;

@@ -7,7 +7,11 @@ import org.springframework.data.jpa.repository.Query;
 
 import com.fiedlercooper.bikeBuilder.entity.Fork;
 
+// REPOSITORY TO EXTEND JPA REPO FOR ADDITIONAL DATABASE METHODS, QUERIES, AND CONTROLS
+
 public interface ForkRepository extends JpaRepository<Fork, Long> {
+
+	// CUSTOM QUERY TO PULL A LIST OF FORKS BASED ON SELECTED TERRAIN TYPE AND WHEEL SIZE 
 
 	@Query(value = "SELECT fot.* FROM fork_table fot\r\n"
 			+ "JOIN terrain_types_forks ttfo ON ttfo.fork_id = fot.id\r\n"

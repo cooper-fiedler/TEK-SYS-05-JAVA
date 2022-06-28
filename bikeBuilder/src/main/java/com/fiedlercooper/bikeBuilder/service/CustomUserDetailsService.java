@@ -9,6 +9,8 @@ import com.fiedlercooper.bikeBuilder.CustomUserDetails;
 import com.fiedlercooper.bikeBuilder.entity.User;
 import com.fiedlercooper.bikeBuilder.repository.UserRepository;
  
+// SERVICE IMPLEMENTATION FOR REPOSITORY TO LOAD USER DETAILS BASED ON USERNAME (EMAIL)
+
 public class CustomUserDetailsService implements UserDetailsService {
  
     @Autowired

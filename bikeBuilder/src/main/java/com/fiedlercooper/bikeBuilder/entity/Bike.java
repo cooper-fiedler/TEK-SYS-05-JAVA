@@ -14,6 +14,8 @@ import org.hibernate.annotations.OnDeleteAction;
 
 import lombok.Data;
 
+// BIKE ENTITY WITH ID AND COMPONENT JOIN RELATIONSHIPS
+
 @Data
 @Entity
 @Table(name = "bike_build_table")

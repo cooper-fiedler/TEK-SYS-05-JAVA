@@ -9,6 +9,8 @@ import javax.persistence.Table;
 
 import lombok.Data;
 
+// WHEEL SET ENTITY WITH ID, BRAND, MODEL, AND COST
+
 @Data
 @Entity
 @Table(name = "wheel_set_table")

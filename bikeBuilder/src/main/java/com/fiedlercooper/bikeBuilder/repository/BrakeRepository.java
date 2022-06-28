@@ -7,7 +7,11 @@ import org.springframework.data.jpa.repository.Query;
 
 import com.fiedlercooper.bikeBuilder.entity.Brake;
 
+// REPOSITORY TO EXTEND JPA REPO FOR ADDITIONAL DATABASE METHODS, QUERIES, AND CONTROLS
+
 public interface BrakeRepository extends JpaRepository<Brake, Long>{
+	
+	// CUSTOM QUERY TO PULL A LIST OF BRAKES BASED ON SELECTED TERRAIN TYPE
 	
 	@Query(value="SELECT b.* FROM brake_table b\r\n"
 			+ "JOIN terrain_types_brakes ttb ON ttb.brake_id = b.id\r\n"

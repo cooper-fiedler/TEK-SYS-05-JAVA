@@ -13,15 +13,19 @@ import com.fiedlercooper.bikeBuilder.entity.User;
 import com.fiedlercooper.bikeBuilder.repository.UserRepository;
  
 @Controller
-public class AppController {
+public class SecurityController {
  
     @Autowired
     private UserRepository userRepo;
+    
+    // GET MAIN INDEX.HTML
      
     @GetMapping("")
     public String viewHomePage() {
         return "index";
     }
+    
+    // MAIN SIGNUP_FORM.HTML
     
     @GetMapping("/register")
     public String showRegistrationForm(Model model) {
@@ -29,6 +33,8 @@ public class AppController {
          
         return "signup_form";
     }
+    
+    // ADDS USER UPON SUCCESSFUL REGISTER
     
     @PostMapping("/process_register")
     public String processRegister(User user) {
@@ -40,6 +46,8 @@ public class AppController {
          
         return "register_success";
     }
+    
+    // RETURNS FULL LIST OF USERS
     
     @GetMapping("/users")
     public String listUsers(Model model) {

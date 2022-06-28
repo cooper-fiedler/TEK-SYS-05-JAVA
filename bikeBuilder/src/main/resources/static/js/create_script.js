@@ -9,13 +9,14 @@ $(document).ready(function() {
 				$(this).prop("disabled", true);
 			$(this).next().next("select").prop("disabled", true);
 		}
+		if ($("#driveTrain").find(":selected").val() !== "Select an option..." && $("#brake").find(":selected").val() !== "Select an option..." && $("#wheelSet").find(":selected").val() !== "Select an option...") {
+			$('#btn-sel').prop("disabled", false);
+		} else {
+			$('#btn-sel').prop("disabled", true);
+		}
+
 	});
 
-
-	$(".table .editButton").on("click", 'i', function() {
-		console.log("click");
-
-	})
 
 })
 
@@ -47,6 +48,7 @@ function getComponents() {
 		console.log(id)
 		var href = 'getComponents/?id=' + id;
 		$.get(href, function(results, status) {
+			$('#btn-sel').prop("disabled", true);
 			console.log(results)
 			$("#driveTrain").empty()
 			$('#driveTrain').append($('<option>', {

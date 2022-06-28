@@ -4,6 +4,8 @@ import java.util.List;
 
 import com.fiedlercooper.bikeBuilder.entity.Frame;
 
+//INTERFACE FOR GENERAL CRUD OPERATIONS
+
 public interface FrameService {
 	List<Frame> getAllFrames();
 

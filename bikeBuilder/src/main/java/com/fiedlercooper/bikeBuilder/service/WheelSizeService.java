@@ -4,6 +4,8 @@ import java.util.List;
 
 import com.fiedlercooper.bikeBuilder.entity.WheelSizes;
 
+//INTERFACE FOR GENERAL CRUD OPERATIONS
+
 public interface WheelSizeService {
 	List<WheelSizes> getAllWheelSizes();
 

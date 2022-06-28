@@ -15,6 +15,8 @@ import javax.persistence.Table;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+// TERRAIN TYPES ENTITY WITH ID, TYPE, AND JOIN RELATIONSHIPS WITH OTHER ENTITIES
+
 @Data
 @NoArgsConstructor
 @Entity
@@ -48,13 +50,5 @@ public class TerrainTypes {
 			@JoinColumn(name = "terrain_types_id") }, inverseJoinColumns = { @JoinColumn(name = "drive_train_id") })
 	private List<DriveTrain> driveTrains;
 	
-	public void setAdditionalFrames(Frame newframe) {
-		this.frames.add(newframe);
-	}
-
-	public void setAdditionalForks(Fork newFork) {
-		this.forks.add(newFork);
-		
-	}
 	
 }

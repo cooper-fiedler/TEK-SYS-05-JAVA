@@ -10,6 +10,8 @@ import javax.persistence.Table;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+// FORK ENTITY WITH ID, BRAND, MODEL, AND COST
+
 @Data
 @NoArgsConstructor
 @Entity

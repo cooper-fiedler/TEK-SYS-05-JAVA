@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 import com.fiedlercooper.bikeBuilder.entity.TerrainTypes;
 import com.fiedlercooper.bikeBuilder.repository.TerrainTypesRepository;
 
+// SERVICE IMPLEMENTATION FOR INTERFACE WITH GENERAL CRUD OPERATIONS
+
 @Service
 public class TerrainTypeServiceImpl implements TerrainTypeService{
 	private TerrainTypesRepository terrainTypesRepository;

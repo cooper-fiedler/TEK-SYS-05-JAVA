@@ -10,6 +10,8 @@ import javax.persistence.Table;
 
 import lombok.Data;
 
+// FRAME ENTITY WITH ID, BRAND, MODEL, AND COST
+
 @Data
 @Entity
 @Table(name = "frame_table")

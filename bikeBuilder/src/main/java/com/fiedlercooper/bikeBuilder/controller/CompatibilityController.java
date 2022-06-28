@@ -59,6 +59,8 @@ public class CompatibilityController {
 	
 	@Autowired
 	BikeService bikeService;
+	
+	// FOR JQUERY TO GET FORKS UPON FRAME SELECTION IN CREATING NEW BIKE
 
 	@GetMapping("bikes/getForks")
 	@ResponseBody
@@ -77,6 +79,8 @@ public class CompatibilityController {
 		return forks;
 	}
 	
+	// FOR JQUERY TO GET FORKS UPON FRAME SELECTION IN EDITING
+	
 	@GetMapping("bikes/edit/getForks")
 	@ResponseBody
 	public List<Fork> selectForkEdit(@RequestParam("id") Long id) {
@@ -93,6 +97,8 @@ public class CompatibilityController {
 		forks.addAll(removeDuplicates);
 		return forks;
 	}
+	
+	// FOR JQUERY TO GET COMPONENTS UPON FORK SELECTION IN CREATING NEW BIKE
 	
 	@GetMapping("bikes/getComponents")
 	@ResponseBody
@@ -138,6 +144,8 @@ public class CompatibilityController {
 		return results;
 	}
 	
+	// FOR JQUERY TO GET COMPONENTS UPON FORK SELECTION IN EDITING
+	
 	@GetMapping("bikes/edit/getComponents")
 	@ResponseBody
 	public List<List<Object>> selectComponentsEdit(@RequestParam("id") Long id){
@@ -182,6 +190,7 @@ public class CompatibilityController {
 		return results;
 	}
 	
+	// FOR JQUERY TO GET CURRENT BIKE BUILD FOR DETAILS
 	
 	@GetMapping("bikes/getBike")
 	@ResponseBody

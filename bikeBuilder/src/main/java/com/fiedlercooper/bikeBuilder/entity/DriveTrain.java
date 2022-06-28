@@ -9,6 +9,8 @@ import javax.persistence.Table;
 
 import lombok.Data;
 
+// DRIVE TRAIN  ENTITY WITH ID, BRAND, MODEL, GEAR COUNT, AND COST
+
 @Data
 @Entity
 @Table(name = "drive_train_table")

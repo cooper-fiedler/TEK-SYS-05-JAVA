@@ -15,22 +15,30 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import com.fiedlercooper.bikeBuilder.service.CustomUserDetailsService;
  
+@SuppressWarnings("deprecation")
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
-    @Autowired
+    @SuppressWarnings("unused")
+	@Autowired
     private DataSource dataSource;
      
+    // USER DETAILS FOR SELECTED USER - BEAN
+    
     @Bean
     public UserDetailsService userDetailsService() {
         return new CustomUserDetailsService();
     }
      
+    // BCRYPT PASSWORD ENCODER FOR DB - BEAN
+    
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
      
+    // DAO AUTH PROVIDER BEAN
+    
     @Bean
     public DaoAuthenticationProvider authenticationProvider() {
         DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
@@ -40,11 +48,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         return authProvider;
     }
  
+    // CONFIGURE AUTHENTICATION
+    
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.authenticationProvider(authenticationProvider());
     }
  
+    // ANT MATCHERS FOR AUTHENTICATION AND ACCESS POINTS
+    
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
