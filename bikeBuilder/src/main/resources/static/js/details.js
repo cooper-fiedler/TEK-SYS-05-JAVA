@@ -15,7 +15,7 @@ function showModal(id) {
 		$("#exampleModal").modal('show');
 		$("#exampleModal").find("#modalHeader").text('Bike Build #' + id);
 		$("#exampleModal").find("#modalName").text('Frame: ' + frame.brand + ' ' + frame.model + ' ' + ' - Cost: $' + frame.cost.toFixed(2));
-		$("#exampleModal").find("#modalFork").text('Fork: ' + fork.brand + fork.model + ' ' + ' - Cost: $' + fork.cost.toFixed(2));
+		$("#exampleModal").find("#modalFork").text('Fork: ' + fork.brand + ' ' + fork.model + ' ' + ' - Cost: $' + fork.cost.toFixed(2));
 		$("#exampleModal").find("#modalDriveTrain").text('Drive Train: ' + driveTrain.brand + ' ' + driveTrain.model + ' ' + driveTrain.gears +'-speed - Cost: $' + driveTrain.cost.toFixed(2));
 		$("#exampleModal").find("#modalBrake").text('Brake: ' + brake.brand + ' ' + brake.model + ' ' + ' - Cost: $' + brake.cost.toFixed(2));
 		$("#exampleModal").find("#modalWheelSet").text('Wheel Set: ' + wheelSet.brand + ' ' + wheelSet.model + ' ' + ' - Cost: $' + wheelSet.cost.toFixed(2));
